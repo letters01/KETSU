@@ -6,13 +6,13 @@
     "developer": "Letters",
     "moduleID": "5555554",
     "moduleImage": "https://i1.wp.com/cdn140.picsart.com/269026868052201.jpg",
-    "moduleVersion": 1.127,
+    "moduleVersion": 1.128,
     "moduleLenguage": "ESP",
     "moduleType": "Video",
     "baseURL": "https://hentaila.com/",
     "moduleDeveloperSite": "",
     "UpdateSite": "https://raw.githubusercontent.com/letters01/KETSU/main/HentalLA.json",
-    "preferedServer": "",
+    "preferedServer": "FEMBED",
     "preferedDownloadServer": "",
     "blackListed": [
       ""
