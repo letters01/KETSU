@@ -6,7 +6,7 @@
     "developer": "Letters",
     "moduleID": "5555554",
     "moduleImage": "https://i1.wp.com/cdn140.picsart.com/269026868052201.jpg",
-    "moduleVersion": 1.122,
+    "moduleVersion": 1.123,
     "moduleLenguage": "ESP",
     "moduleType": "Video",
     "baseURL": "https://hentaila.com/",
@@ -387,9 +387,9 @@
         ]
       },
       "javascriptConfig": {
-        "removeJavascript": true,
+        "removeJavascript": false,
         "loadInWebView": false,
-        "javaScript": "function Chapters(request, extra, javascriptConfig, output) {this.request = request;this.extra = extra;this.javascriptConfig = javascriptConfig;this.output = output;}function ModuleRequest(url, method, headers, httpBody) {this.url = url;this.method = method;this.headers = headers;this.httpBody = httpBody;}function Extra(commands, extraInfo) {this.commands = commands;this.extraInfo = extraInfo;}function Commands(commandName, params) {this.commandName = commandName;this.params = params;}function JavascriptConfig(removeJavascript, loadInWebView, javaScript) {this.removeJavascript = removeJavascript;this.loadInWebView = loadInWebView;this.javaScript = javaScript;}function KeyValue(key, value) {this.key = key;this.value = value;}function Output(videos, images, text) {this.videos = videos;this.images = images;this.text = text;}function Videos(needsResolver, rawVideo) {this.needsResolver = needsResolver;this.rawVideo = rawVideo;}function NeedsResolver(resolverIdentifier, link) {this.resolverIdentifier = resolverIdentifier;this.link = link;}function RawVideo(video) {this.video = video;}function Video(videoQuality, videoLink) {this.videoQuality = videoQuality;this.videoLink = videoLink;}function Text(text) {this.text = text;}var output = [];var savedData = document.getElementById('ketsu-final-data');var parsedJson = JSON.parse(savedData.innerHTML);var emptyKeyValue = [new KeyValue('', '')];var body = document.querySelector('#hentai > p:nth-child(14)');var scri = document.createElement('script');var links = [];var raw = []scri.innerHTML = body.innerHTML.replaceAll('\\\"','').replaceAll('\\\\','');var vids = scri.innerHTML.split(',');for(var i = 0; i < vids.length; i++){ if (vids[i].includes('https')){ links.push(vids[i]); }}for(var x = 0; x < links.length; x++){ var id = ''; if(links[x].includes('fembed')){ id = 'FEMBED'; output.push(new NeedsResolver(id, links[x])); }else if(links[x].includes('mp4upload')){ id = 'MP4UPLOAD'; output.push(new NeedsResolver(id, links[x])); }else if(links[x].includes('yourupload')){ id = 'YOURUPLOAD'; output.push(new NeedsResolver(id, links[x])); }else output.push(new NeedsResolver(id, links[x]));}let emptyExtra = new Extra([new Commands('', emptyKeyValue)], emptyKeyValue);var chaptersObject = new Chapters(new ModuleRequest('', '', emptyKeyValue, null), emptyExtra, new JavascriptConfig(false, false, ''), new Output(new Videos(output, null), null, null));var finalJson = JSON.stringify(chaptersObject);savedData.innerHTML = finalJson;"
+        "javaScript": "function Chapters(request, extra, javascriptConfig, output) {this.request = request;this.extra = extra;this.javascriptConfig = javascriptConfig;this.output = output;}function ModuleRequest(url, method, headers, httpBody) {this.url = url;this.method = method;this.headers = headers;this.httpBody = httpBody;}function Extra(commands, extraInfo) {this.commands = commands;this.extraInfo = extraInfo;}function Commands(commandName, params) {this.commandName = commandName;this.params = params;}function JavascriptConfig(removeJavascript, loadInWebView, javaScript) {this.removeJavascript = removeJavascript;this.loadInWebView = loadInWebView;this.javaScript = javaScript;}function KeyValue(key, value) {this.key = key;this.value = value;}function Output(videos, images, text) {this.videos = videos;this.images = images;this.text = text;}function Videos(needsResolver, rawVideo) {this.needsResolver = needsResolver;this.rawVideo = rawVideo;}function NeedsResolver(resolverIdentifier, link) {this.resolverIdentifier = resolverIdentifier;this.link = link;}function RawVideo(video) {this.video = video;}function Video(videoQuality, videoLink) {this.videoQuality = videoQuality;this.videoLink = videoLink;}function Text(text) {this.text = text;}var output = [];var savedData = document.getElementById('ketsu-final-data');var parsedJson = JSON.parse(savedData.innerHTML);var emptyKeyValue = [new KeyValue('', '')];var body = document.querySelector('#hentai > p:nth-child(14)');var scri = document.createElement('script');var links = [];scri.innerHTML = body.innerHTML.replaceAll('\\\\','');document.querySelector('body').appendChild(scri);for(var i = 0; i < videos.length; i++){ var id = ''; if(videos[i][1].includes('fembed')){ id = 'FEMBED'; output.push(new NeedsResolver(id, new ModuleRequest(videos[i][1], 'get', emptyKeyValue, null))); }else if(videos[i][1].includes('mp4upload')){ id = 'MP4UPLOAD'; output.push(new NeedsResolver(id, new ModuleRequest(videos[i][1], 'get', emptyKeyValue, null))); }else if(videos[i][1].includes('yourupload')){ id = 'YOURUPLOAD'; output.push(new NeedsResolver(id, new ModuleRequest(videos[i][1], 'get', emptyKeyValue, null))); }else output.push(new NeedsResolver(id, new ModuleRequest(videos[i][1], 'get', emptyKeyValue, null))); }for(var x = 0; x < links.length; x++){ }let emptyExtra = new Extra([new Commands('', emptyKeyValue)], emptyKeyValue);var chaptersObject = new Chapters(new ModuleRequest('', '', emptyKeyValue, emptyKeyValue), emptyExtra, new JavascriptConfig(false, false, ''), new Output(new Videos(output, null), null, null));var finalJson = JSON.stringify(chaptersObject);savedData.innerHTML = finalJson;"
       },
       "output": {
         "videos": {
@@ -397,7 +397,7 @@
             {
               "resolverIdentifier": "",
               "link": {
-                "url": "https://hentaila.com/",
+                "url": "",
                 "method": "get",
                 "headers": [
                   {
