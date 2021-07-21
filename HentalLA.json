@@ -12,7 +12,7 @@
     "baseURL": "https://hentaila.com/",
     "moduleDeveloperSite": "",
     "UpdateSite": "https://raw.githubusercontent.com/letters01/KETSU/main/HentalLA.json",
-    "preferedServer": "FEMBED",
+    "preferedServer": "",
     "preferedDownloadServer": "",
     "blackListed": [
       ""
