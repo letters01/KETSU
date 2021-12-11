@@ -11,7 +11,7 @@
     "moduleType": "Image",
     "baseURL": "https://www.manhwas.net/es",
     "moduleDeveloperSite": "",
-    "UpdateSite": "",
+    "UpdateSite": "https://raw.githubusercontent.com/letters01/KETSU/main/ManhwaDotNet.json",
     "preferedServer": "",
     "preferedDownloadServer": "",
     "blackListed": [
